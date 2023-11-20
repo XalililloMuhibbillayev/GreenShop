@@ -120,6 +120,8 @@ nav {
         height: 40px;
         border-radius: 10px;
         background-color: aliceblue;
+        outline: none;
+        border: none;
     }
     /* Header End */
 }
