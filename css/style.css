@@ -99,6 +99,7 @@ nav {
 /* Response */
 
 @media screen and (max-width:950px) {
+    /* Header */
     .nav-item {
         display: none;
     }
@@ -120,12 +121,15 @@ nav {
         border-radius: 10px;
         background-color: aliceblue;
     }
+    /* Header End */
 }
 
 @media screen and (max-width:600px) {
+    /* Header */
     .search-tab {
         display: none;
     }
+    /* Header End */
 }
 
 /* Response End */
