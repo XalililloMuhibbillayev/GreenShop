@@ -93,10 +93,98 @@ nav {
     display: none;
 }
 /* Header End */
+/* Main  */
+/* Banner */
+
+    .banner {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1px 40px;
+        flex-shrink: 0;
+        border: 1px solid #000;
+        background: linear-gradient(98deg, rgba(245, 245, 245, 0.50) -23.46%, rgba(245, 245, 245, 0.50) 107.51%);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .banner-texts {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .banner-texts p {
+        font-size: 14px;
+        font-weight: 500;
+        color: var(--banner-color);
+    }
+
+    .banner-texts h1 {
+        font-size: 70px;
+        font-weight: 900;
+        color: var(--banner-color);
+        width: 550px;
+    }
+
+    .banner-texts h1 b {
+        color: var(--color);
+    }
+
+    .banner-texts span {
+        color: #727272;
+        font-size: 14px;
+        font-weight: 400;
+        width: 550px;
+    }
+    .banner-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 140px;
+        height: 40px;
+        background: var(--color);
+        margin-top: 44px;
+        cursor: pointer;
+    }
+    .banner-btn a {
+        font-size: 16px;
+        font-weight: 700;
+        color: white;
+    }
+/* Banner End */
+/* Main End */
+
 
 
 
 /* Response */
+
+@media screen and (max-width:1115px) {
+    /* Banner */
+    .banner {
+        justify-content: center;
+        border: none;
+        padding: 10px;
+    }
+    .banner-texts {
+        align-items: center;    
+    }
+
+    .banner-texts h1 {
+        text-align: center;
+    }
+
+    .banner-texts span {
+        text-align: center;      
+    }
+    
+    /* Banner End */
+}
+
 
 @media screen and (max-width:950px) {
     /* Header */
@@ -126,12 +214,42 @@ nav {
     /* Header End */
 }
 
+@media screen and (max-width:700px) {
+    /* Banner  */
+    .banner-texts h1 {
+        width: 450px;
+        font-size: 50px;
+    }
+
+    .banner-texts span {
+        width: 400px;
+    }
+    /* Banner End */
+}
+
+
 @media screen and (max-width:600px) {
     /* Header */
     .search-tab {
         display: none;
     }
     /* Header End */
+}
+
+@media screen and (max-width:470px) {
+    /* Banner  */
+    .banner-texts h1 {
+        width: 250px;
+        font-size: 30px;
+    }
+
+    .banner-texts span {
+        width: 250px;
+    }
+    .banner-btn {
+        margin-top: 25px;
+    }
+    /* Banner End */
 }
 
 /* Response End */
