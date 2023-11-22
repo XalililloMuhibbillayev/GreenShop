@@ -79,6 +79,7 @@ nav {
     height: 35px;
     border-radius: 6px;
     background: #46A358;
+    cursor: pointer;
 }
 
 .nav-button a {
