@@ -382,6 +382,87 @@ nav {
     font-weight: 600;
 }
 /* About End */
+/* Blog */
+
+.blog {
+    margin-top: 130px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 35px;
+}
+
+.blog-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.blog-title-text {
+    color: var(--banner-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.blog-title p {
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-main {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-cart {
+    width: 268px;
+    background: #FBFBFB;
+}
+
+.blog-cart-texts {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding: 0px 5px;
+}
+
+.blog-cart-texts p {
+    color: var(--color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.blog-cart-texts h3 {
+    color: var(--banner-color);
+    font-size: 20px;
+    font-weight: 700;
+    width: 250px;
+}
+
+.blog-cart-texts span {
+    display: block;
+    color: #727272;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.blog-cart-text-link {
+    color: var(--banner-color);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.blog-cart-text-link:hover {
+    color: var(--color);
+}
+
+/* Blog End */
 /* Main End */
 
 
@@ -428,6 +509,13 @@ nav {
     }
 
     /* About End */
+    /* Blog */
+    .blog-main {
+        width: 80%;
+        justify-content: center;
+        gap: 50px;
+    }
+    /* Blog End */
 
 }
 
@@ -458,6 +546,11 @@ nav {
         border: none;
     }
     /* Header End */
+    /* Blog */
+    .blog-main {
+        width: 100%;
+    }
+    /* blog Emd */
 }
 
 @media screen and (max-width:700px) {
@@ -508,6 +601,22 @@ nav {
         text-align: center;
     }
     /* About End */
+    /* Blog */
+    .blog-cart-texts p {
+        text-align: center;
+    }
+    
+    .blog-cart-texts h3 {
+        text-align: center;
+    }
+    
+    .blog-cart-texts span {
+        text-align: center;
+    }
+    .blog-title p {
+        text-align: center;
+    }
+    /* blog Emd */
 }
 
 
