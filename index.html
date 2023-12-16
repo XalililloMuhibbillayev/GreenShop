@@ -1,299 +1,367 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=`, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=`, initial-scale=1.0" />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Font Awesome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- style -->
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.css" />
 
     <title>GreenShop</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="container">
-            <nav>
-                <a href="./index.html">
-                    <div class="logo">
-                        <img src="./images/logo.svg" alt="Logo">
-                        <span class="logo-text">GREENSHOP</span>
-                    </div>
-                </a>
-                <ul class="nav-item">
-                    <li class="nav-link">
-                        <a href="#">Home</a>
+      <div class="container">
+        <nav>
+          <a href="./index.html">
+            <div class="logo">
+              <img src="./images/logo.svg" alt="Logo" />
+              <span class="logo-text">GREENSHOP</span>
+            </div>
+          </a>
+          <ul class="nav-item">
+            <li class="nav-link">
+              <a href="#">Home</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Shop</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Plant Care</a>
+            </li>
+            <li class="nav-link">
+              <a href="#">Blogs</a>
+            </li>
+          </ul>
 
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Shop</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Plant Care</a>
-                    </li>
-                    <li class="nav-link">
-                        <a href="#">Blogs</a>
-                    </li>
-                </ul>
+          <div class="search-tab">
+            <input type="text" class="search-tab" />
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: #3d3d3d; font-size: 20px"
+            ></i>
+          </div>
 
-                <div class="search-tab">
-                    <input type="text" class="search-tab">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d; font-size: 20px; "></i>
-                </div>
+          <div class="nav-icons">
+            <i
+              class="fa-solid fa-magnifying-glass"
+              style="color: #3d3d3d; font-size: 20px; cursor: pointer"
+            ></i>
+            <i
+              class="fa-sharp fa-regular fa-cart-shopping"
+              style="color: #3d3d3d; font-size: 20px; cursor: pointer"
+            ></i>
 
-                <div class="nav-icons">
-                    <i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d; font-size: 20px; cursor: pointer; "></i>
-                    <i class="fa-sharp fa-regular fa-cart-shopping" style="color: #3d3d3d; font-size: 20px; cursor: pointer; "></i>
+            <div class="nav-button">
+              <i class="fa-solid fa-right-to-bracket" style="color: white"></i>
+              <a href="#">Login</a>
+            </div>
+          </div>
 
-                    <div class="nav-button">
-                        <i class="fa-solid fa-right-to-bracket" style="color: white;"></i>
-                        <a href="#">Login</a>
-                    </div>
-
-                </div>
-
-                <div class="sidebar">
-                    <i class="fa-solid fa-bars" style="color: #3d3d3d; font-size: 30px;"></i>
-                </div>
-
-            </nav>
-        </div>
+          <div class="sidebar">
+            <i
+              class="fa-solid fa-bars"
+              style="color: #3d3d3d; font-size: 30px"
+            ></i>
+          </div>
+        </nav>
+      </div>
     </header>
     <main>
-        <section>
-            <div class="container">
-                <div class="banner">
-                    <div class="banner-texts">
-                        <p>WELCOME TO GREENSHOP</p>
-                        <h1>Let's Make A Better <b>Planet</b></h1>
-                        <span>We are an online plant shop offering a wide range of cheap and trendy plants. Use our plants to create an unique Urban Jungle. Order your favorite plants!</span>
-                        <div class="banner-btn">
-                            <a href="#">SHOP NOW</a>
-                        </div>
-                    </div>
-                    <div class="banner-images">
-                        <img src="./images/banner_image.svg" alt="Banner Image">
-                    </div>
-                </div>
+      <section>
+        <div class="container">
+          <div class="banner">
+            <div class="banner-texts">
+              <p>WELCOME TO GREENSHOP</p>
+              <h1>Let's Make A Better <b>Planet</b></h1>
+              <span
+                >We are an online plant shop offering a wide range of cheap and
+                trendy plants. Use our plants to create an unique Urban Jungle.
+                Order your favorite plants!</span
+              >
+              <div class="banner-btn">
+                <a href="#">SHOP NOW</a>
+              </div>
             </div>
-        </section>
+            <div class="banner-images">
+              <img src="./images/banner_image.svg" alt="Banner Image" />
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="container">
-                <div class="products-and-categories">
-                    <div class="categories">
-                        <div class="categories-block">
-                            <div class="products-and-categories-title">
-                                <h3>Categories</h3>
-                            </div>
-                            <div class="categories-item">
-                                <a href="#" class="categories-link">House Plants</a>
-                                <a href="#" class="categories-link">Potter Plants</a>
-                                <a href="#" class="categories-link">Seeds</a>
-                                <a href="#" class="categories-link">Small Plants</a>
-                                <a href="#" class="categories-link">Big Plants</a>
-                                <a href="#" class="categories-link">Succulents</a>
-                                <a href="#" class="categories-link">Trerrariums</a>
-                                <a href="#" class="categories-link">Gardening</a>
-                                <a href="#" class="categories-link">Accessories</a>
-                            </div>
-                        </div>
-                        <div class="price-range-block">
-                            <div class="products-and-categories-title">
-                                <h3>Price Range</h3>
-                            </div>
-                            <div class="price-range-item">
-                                <div class="range">
-                                    <input type="range" class="range-input" min="0" max="650">
-                                </div>
-                                <p>Price: <b>$39 - $1230</b></p>
-                                <div class="price-range-button">
-                                    <a href="#">Filter</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="size">
-                            <div class="products-and-categories-title">
-                                <h3>Size</h3>
-                            </div>
-                            <div class="size-item">
-                                <a href="#" class="size-link">Small</a>
-                                <a href="#" class="size-link">Medium</a>
-                                <a href="#" class="size-link">Large</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="products">
-                        <div class="products-nav">
-                            <ul class="products-item">
-                                <li><a href="#" class="products-link" id="link-hover">All Plants</a></li>
-                                <li><a href="#" class="products-link">New Arrivals</a></li>
-                                <li><a href="#" class="products-link">Sale</a></li>
-                            </ul>
-                        </div>
-                        <div class="products-block">
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                            <a href="#">
-                                <div class="products-cart">
-                                    <div class="products-cart-image">
-                                        <img src="./images/products-cart-image.png" alt="Products-cart-image">
-                                    </div>
-                                    <div class="products-cart-title">
-                                        <h4>Barberton Daisy</h4>
-                                    </div>
-                                    <div class="products-cart-price">
-                                        <b>$119.00</b>
-                                    </div>
-                                </div>
-                            </a>
-                        </div>
-                    </div>
+      <section>
+        <div class="container">
+            
+          <div class="products-and-categories">
+            <div class="categories">
+              <div class="categories-block">
+                <div class="products-and-categories-title">
+                  <h3>Categories</h3>
                 </div>
+                <div class="categories-item">
+                  <a href="#" class="categories-link">House Plants</a>
+                  <a href="#" class="categories-link">Potter Plants</a>
+                  <a href="#" class="categories-link">Seeds</a>
+                  <a href="#" class="categories-link">Small Plants</a>
+                  <a href="#" class="categories-link">Big Plants</a>
+                  <a href="#" class="categories-link">Succulents</a>
+                  <a href="#" class="categories-link">Trerrariums</a>
+                  <a href="#" class="categories-link">Gardening</a>
+                  <a href="#" class="categories-link">Accessories</a>
+                </div>
+              </div>
+              <div class="price-range-block">
+                <div class="products-and-categories-title">
+                  <h3>Price Range</h3>
+                </div>
+                <div class="price-range-item">
+                  <div class="range">
+                    <input type="range" class="range-input" min="0" max="650" />
+                  </div>
+                  <p>Price: <b>$39 - $1230</b></p>
+                  <div class="price-range-button">
+                    <a href="#">Filter</a>
+                  </div>
+                </div>
+              </div>
+              <div class="size">
+                <div class="products-and-categories-title">
+                  <h3>Size</h3>
+                </div>
+                <div class="size-item">
+                  <a href="#" class="size-link">Small</a>
+                  <a href="#" class="size-link">Medium</a>
+                  <a href="#" class="size-link">Large</a>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="products">
+              <div class="products-nav">
+                <ul class="products-item">
+                  <li>
+                    <a href="#" class="products-link" id="link-hover"
+                      >All Plants</a
+                    >
+                  </li>
+                  <li><a href="#" class="products-link">New Arrivals</a></li>
+                  <li><a href="#" class="products-link">Sale</a></li>
+                </ul>
+              </div>
+              <div class="products-block">
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+                <a href="#">
+                  <div class="products-cart">
+                    <div class="products-cart-image">
+                      <img
+                        src="./images/products-cart-image.png"
+                        alt="Products-cart-image"
+                      />
+                    </div>
+                    <div class="products-cart-title">
+                      <h4>Barberton Daisy</h4>
+                    </div>
+                    <div class="products-cart-price">
+                      <b>$119.00</b>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <section>
-            <div class="container">
-                <div class="about">
-                    <div class="about-block">
-                        <img src="./images/about-block-image.png" alt="About-block-image" class="about-block-image">
-                        <div class="about-block-main">
-                            <div class="about-block-title">
-                                <h3>Summer cactus & succulents</h3>
-                            </div>
-                            <div class="about-block-text">
-                                <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                            </div>
-                            <div class="about-block-button">
-                                <a href="#">Find More</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="about-block">
-                        <img src="./images/about-block-image.png" alt="About-block-image" class="about-block-image">
-                        <div class="about-block-main">
-                            <div class="about-block-title">
-                                <h3>Summer cactus & succulents</h3>
-                            </div>
-                            <div class="about-block-text">
-                                <p>We are an online plant shop offering a wide range of cheap and trendy plants</p>
-                            </div>
-                            <div class="about-block-button">
-                                <a href="#">Find More</a>
-                            </div>
-                        </div>
-                    </div>
+      <section>
+        <div class="container">
+          <div class="about">
+            <div class="about-block">
+              <img
+                src="./images/about-block-image.png"
+                alt="About-block-image"
+                class="about-block-image"
+              />
+              <div class="about-block-main">
+                <div class="about-block-title">
+                  <h3>Summer cactus & succulents</h3>
                 </div>
+                <div class="about-block-text">
+                  <p>
+                    We are an online plant shop offering a wide range of cheap
+                    and trendy plants
+                  </p>
+                </div>
+                <div class="about-block-button">
+                  <a href="#">Find More</a>
+                </div>
+              </div>
             </div>
-        </section>
+            <div class="about-block">
+              <img
+                src="./images/about-block-image.png"
+                alt="About-block-image"
+                class="about-block-image"
+              />
+              <div class="about-block-main">
+                <div class="about-block-title">
+                  <h3>Summer cactus & succulents</h3>
+                </div>
+                <div class="about-block-text">
+                  <p>
+                    We are an online plant shop offering a wide range of cheap
+                    and trendy plants
+                  </p>
+                </div>
+                <div class="about-block-button">
+                  <a href="#">Find More</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer></footer>
-</body>
+  </body>
 </html>
