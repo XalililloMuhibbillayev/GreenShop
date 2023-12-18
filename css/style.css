@@ -123,6 +123,9 @@ nav {
     margin-bottom: 40px;
     gap: 20px;
 }
+.register {
+    color: var(--banner-color);
+}
 .login-input {
     display: flex;
     flex-direction: column;
@@ -1027,6 +1030,33 @@ body.active .modal-box {
         width: 100%;
     }
     /* Footer End */
+    /* Modal box */
+    .modal-box {
+        width: 350px;
+        padding: 10px;
+        background-color: white;
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        opacity: 0;
+        pointer-events: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .login-input input, .login-btn {
+        width: 250px;
+    }
+    .login-input-title {
+        width: 200px;
+        text-align: center;
+    }
+    .forgot-password {
+        margin-right: 50px;
+    }
+    
+    /* Modal box end */
 }
 
 @media screen and (max-width:470px) {
@@ -1056,6 +1086,19 @@ body.active .modal-box {
         font-size: 12px;
     }
     /* About End */
+        /* Modal box */
+        .modal-box {
+            width: 250px;
+        }
+        .login-input input, .login-btn {
+            width: 150px;
+            font-size: 10px;
+        }
+        .login-btn a {
+            font-size: 14px;
+        }
+        
+        /* Modal box end */
 }
 
 /* Response End */
