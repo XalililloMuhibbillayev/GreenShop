@@ -10,6 +10,7 @@
     text-decoration: none;
     list-style: none;
     font-family: 'Poppins', sans-serif;
+    animation: all 0.3 ease-in-out;
 }
 
 img {
@@ -88,7 +89,7 @@ nav {
     font-size: 16px;
     font-weight: 500;
 }
-
+/* Modal box */
 #overlay {
     position: absolute;
     height: 100%;
@@ -97,7 +98,7 @@ nav {
     opacity: 0;
     pointer-events: none;
 }
-.modal-box {
+.modal-box{
     width: 500px;
     padding: 10px;
     background-color: white;
@@ -203,6 +204,7 @@ body.active .modal-box {
     opacity: 1;
     pointer-events: auto;
 }
+/* Modal box end */
 .search-tab {
     display: none;
 }
