@@ -169,6 +169,8 @@ nav {
 }
 .register_active{
     display: flex;
+    padding: 20px;
+
 }
 .login_active{
     display: none;
@@ -188,14 +190,35 @@ nav {
 .login__form{
     display: flex;
     flex-direction: column;
+    align-items: center;
+    flex: wrap;
 }
-.login__form input{
+.login__form input {
+    width: 300px;
+    height: 40px;
+    flex-shrink: 0;
+    outline: none;
+    color: var(--color);
     padding: 5px;
     border: 1px solid lightgrey;
     border-radius: 5px;
     margin-bottom: 10px;
 }
+.login__form input:hover{
+    border: 1px solid var(--color);
+}
+.forgot_pass {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.forgot_pass a {
+    color: var(--color);
+
+}   
 .login__btn{
+    width: 300px;
+    height: 45px;
     background-color: #46A358;
     color: #fff;
     border-radius: 5px;
@@ -218,6 +241,9 @@ nav {
 }
 .burger {
     display: none;
+}
+.register__form {
+    margin-top: 20px;
 }
 /* Modal End */
 

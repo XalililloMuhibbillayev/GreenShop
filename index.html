@@ -47,7 +47,9 @@
             <form class="login__form">
                 <input type="email" placeholder="Email address">
                 <input type="password" placeholder="Password">
-                <span style="color: #46A358; font-size: 13px; margin-bottom: 10px;">Forgot Password?</span>
+                <div class="forgot_pass">
+                    <a href="#">forgot password</a>
+                </div>
                 <button type="submit" class="login__btn">Login</button>
             </form>
             <br>
@@ -58,26 +60,24 @@
             <i class="fas fa-x login_x"></i>
         </div>
         <div class="login register" id="register">
-            <div class="login__title">
-                <a class="transition">Login</a>
-                <a href="#"><span style="color: #46A358;"> | Register</span></a>
-            </div>
-            <span style="font-size: 13px;">Enter your username and password to login.</span>
-            <br>
-            <form class="login__form">
-                <input type="email" placeholder="Email address">
-                <input type="password" placeholder="Password">
-                <input type="password" placeholder="Password">
+            <div class="register_container">
+                <div class="login__title">
+                    <a class="transition">Login</a>
+                    <a href="#"><span style="color: #46A358;"> | Register</span></a>
+                </div>
+                <span style="font-size: 13px;">Enter your email and password to register.</span>
+                <br>
+                <form class="login__form register__form">
+                    <input type="username" placeholder="Enter username">
+                    <input type="email" placeholder="Enter email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm password">
 
-                <span style="color: #46A358; font-size: 13px; margin-bottom: 10px;">Forgot Password?</span>
-                <button type="submit" class="login__btn">Login</button>
-            </form>
-            <br>
-            <span style="font-size: 13px; color: grey;">Or login with</span>
-            <br>
-            <button class="login__buttons" style="margin-bottom: 10px;"><i class="fab fa-google">&emsp;</i>Login with Google</button>
-            <button class="login__buttons"><i class="fab fa-facebook">&emsp;</i>Login with Facebook</button>
-            <i class="fas fa-x login_x"></i>
+                    <button type="submit" class="login__btn">Register</button>
+                </form>
+                <i class="fas fa-x login_x"></i>
+
+            </div>
         </div>
     </div>
     <header>
