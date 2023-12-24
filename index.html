@@ -15,7 +15,71 @@
     <title>GreenShop</title>
 </head>
 <body>
-    <span id="overlay"></span>
+    <div class="sidebar">
+        <i class="fas fa-x sidebar_x"></i>
+        <ul class="sidebar-item">
+            <li class="sidebar-link">
+                <a href="#">Home</a>
+            </li>
+            <li class="sidebar-link">
+                <a href="#">Shop</a>
+            </li>
+            <li class="sidebar-link">
+                <a href="#">Plant Care</a>
+            </li>
+            <li class="sidebar-link">
+                <a href="#">Blogs</a>
+            </li>
+        </ul>
+        <div class="sidebar-icons">
+            <i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d; font-size: 20px; cursor: pointer; margin: 15px 0px;"></i>
+            <i class="fas fa-regular fa-cart-shopping" style="color: #3d3d3d; font-size: 20px; cursor: pointer; margin: 15px 0px;"></i>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="login">
+            <div class="login__title">
+                <span style="color: #46A358;">Login </span>
+                <span class="transition"> | Register</span>
+            </div>
+            <span style="font-size: 13px;">Enter your username and password to login.</span>
+            <br>
+            <form class="login__form">
+                <input type="email" placeholder="Email address">
+                <input type="password" placeholder="Password">
+                <span style="color: #46A358; font-size: 13px; margin-bottom: 10px;">Forgot Password?</span>
+                <button type="submit" class="login__btn">Login</button>
+            </form>
+            <br>
+            <span style="font-size: 13px; color: grey;">Or login with</span>
+            <br>
+            <button class="login__buttons" style="margin-bottom: 10px;"><i class="fab fa-google">&emsp;</i>Login with Google</button>
+            <button class="login__buttons"><i class="fab fa-facebook">&emsp;</i>Login with Facebook</button>
+            <i class="fas fa-x login_x"></i>
+        </div>
+        <div class="login register" id="register">
+            <div class="login__title">
+                <a class="transition">Login</a>
+                <a href="#"><span style="color: #46A358;"> | Register</span></a>
+            </div>
+            <span style="font-size: 13px;">Enter your username and password to login.</span>
+            <br>
+            <form class="login__form">
+                <input type="email" placeholder="Email address">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Password">
+
+                <span style="color: #46A358; font-size: 13px; margin-bottom: 10px;">Forgot Password?</span>
+                <button type="submit" class="login__btn">Login</button>
+            </form>
+            <br>
+            <span style="font-size: 13px; color: grey;">Or login with</span>
+            <br>
+            <button class="login__buttons" style="margin-bottom: 10px;"><i class="fab fa-google">&emsp;</i>Login with Google</button>
+            <button class="login__buttons"><i class="fab fa-facebook">&emsp;</i>Login with Facebook</button>
+            <i class="fas fa-x login_x"></i>
+        </div>
+    </div>
     <header>
         <div class="container">
             <nav>
@@ -44,37 +108,15 @@
 
                 <div class="nav-icons">
                     <i class="fa-solid fa-magnifying-glass" style="color: #3d3d3d; font-size: 20px; cursor: pointer; "></i>
-                    <i class="fa-sharp fa-regular fa-cart-shopping" style="color: #3d3d3d; font-size: 20px; cursor: pointer; "></i>
-
+                    <i class="fas fa-regular fa-cart-shopping" style="color: #3d3d3d; font-size: 20px; cursor: pointer; "></i>
                 </div>
-                <div class="sidebar-main">                
+                <div class="burger-main">                
                     <div class="nav-button">
                         <i class="fa-solid fa-right-to-bracket" style="color: white;"></i>
                         <a href="#">Login</a>
                     </div>
-                    <div class="sidebar">
+                    <div class="burger">
                         <i class="fa-solid fa-bars" style="color: #3d3d3d; font-size: 30px;"></i>
-                    </div>
-                </div>
-
-                <div class="modal-box">
-                    <div class="close-icon">
-                        <i class="fa-solid fa-xmark"></i>
-                    </div>
-                    <div class="login">
-                        <div class="login-or-register">
-                            <a href="#">Login</a>
-                            <a href="#" class="register">Register</a>
-                        </div>
-                    </div>
-                    <div class="login-input">
-                        <p class="login-input-title">Enter your username and password to login.</p>
-                        <input type="email" placeholder="Enter your email" required>
-                        <input type="password" placeholder="Enter your password" required>
-                    </div>
-                    <p class="forgot-password"><a href="#">Forgot Password?</a></p>
-                    <div class="login-btn">
-                        <a href="#">Login</a>
                     </div>
                 </div>
             </nav>

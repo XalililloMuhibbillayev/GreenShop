@@ -20,15 +20,58 @@ img {
 body {
     overflow-x: hidden; 
 }
-
+.body_active{
+    overflow-y: hidden;
+}
 .container {
     max-width: 1440px;
     padding: 0 5%;
     margin: 0 auto;
 }
-
+.container_active{
+    filter: blur(5px);
+}
 /* Header */
+/* Sidebar */
+.sidebar{
+    width: 300px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    position: fixed;
+    right: -300px;
+    top: 0;
+    transition: 400ms;
+    background-color: #fff;
+    padding: 20px;
+}
+.sidebar_x{
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    right: 15px;
+}
+.sidebar-link{
+    margin: 15px 0px;
+}
+.sidebar-icons{
+    display: flex;
+    flex-direction: column;   
+}
+.sidebar_active{
+    right: 0;
+}
+.sidebar-link a {
+    color: var(--banner-color);
+}
 
+.sidebar-link a:hover {
+    color: var(--color);
+}
+/* Sidebar end */
 nav {
     width: 100%;
     height: 80px;
@@ -98,119 +141,86 @@ nav {
     opacity: 0;
     pointer-events: none;
 }
-.modal-box{
-    width: 500px;
-    padding: 10px;
-    background-color: white;
+/* Modal */
+.modal{
+    width: 350px;
+    height: 450px;
+    background-color: #fff;
     position: absolute;
-    top: 50%;
-    right: 50%;
-    transform: translate(50%, -50%);
-    opacity: 0;
-    pointer-events: none;
+    z-index: 10;
+    top: -500px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: 400ms;
+    border-bottom: 10px solid #46A358;
+    text-align: center;
+}
+.login{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
 }
-.close-icon {
+.register{
+    display: none;
+}
+.register_active{
     display: flex;
-    justify-content: end;
-    
 }
-.login-or-register {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-    margin-bottom: 40px;
-    gap: 20px;
+.login_active{
+    display: none;
 }
-.register {
-    color: var(--banner-color);
+.login_x{
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    font-size: 20px;
+    right: 15px;
 }
-.login-input {
+.login__title{
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.login__form{
     display: flex;
     flex-direction: column;
-    align-items: center;
 }
-.login-input-title {
-    color: var(--banner-color);
-    font-size: 13px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-    margin-bottom: 14px;
-}
-.login-input input {
-    width: 300px;
-    height: 40px;
-    flex-shrink: 0;
+.login__form input{
+    padding: 5px;
+    border: 1px solid lightgrey;
     border-radius: 5px;
-    border: 1px solid #EAEAEA; 
-    margin: 17px; 
-    outline: none;
+    margin-bottom: 10px;
+}
+.login__btn{
+    background-color: #46A358;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 500;
+    border: none;
     padding: 10px;
-    color: var(--color);
-    font-size: 14px;
 }
-.login-input input:hover {
-    border: 1px solid var(--color);
-}
-
-.login-or-register a:nth-child(1) {
-    color: var(--color);
-}
-.close-icon i {
-    font-size: 25px;
-    color: var(--color);
-    cursor: pointer;
-}
-
-.forgot-password {
-    text-align: end;
-    margin-right: 90px;
-}
-.forgot-password a {
-    color: var(--color);
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 16px;
-}
-.login-btn {
-    width: 300px;
-    height: 45px;
-    flex-shrink: 0;
+.login__buttons{
+    background: none;
+    border: 1px solid lightgrey;
     border-radius: 5px;
-    background: #46A358;
-    margin: 20px auto; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
+    padding: 10px;
 }
-.login-btn a {
-    color: #FFF;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 16px;
-}
-
-body.active #overlay {
-    opacity: 1;
-    pointer-events: auto;
-}
-body.active .modal-box {
-    opacity: 1;
-    pointer-events: auto;
+.modal_active{
+    top: 100px;
 }
 /* Modal box end */
 .search-tab {
     display: none;
 }
-.sidebar {
+.burger {
     display: none;
 }
+/* Modal End */
+
 /* Header End */
 /* Main  */
 /* Banner */
@@ -851,11 +861,11 @@ body.active .modal-box {
     .nav-icons {
         display: none;
     }
-    .sidebar-main {
+    .burger-main {
         display: flex;
         gap: 20px;
     }
-    .sidebar {
+    .burger {
         display: flex;
         align-items: center;
         cursor: pointer;
